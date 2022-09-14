@@ -1,0 +1,116 @@
+.section {
+
+    // .section__story
+
+    &__story {
+        margin-top: -62px;
+        z-index: 100;
+        @media(max-width: $breakpoint992){
+            margin-top: 0;
+            padding: 35px 0;
+        }
+    }
+}
+
+.story {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    gap: 20px;
+    @media(max-width: $breakpoint1200){
+        gap: 40px;
+    }
+    @media(max-width: $breakpoint992){
+        flex-wrap: wrap-reverse;
+    }
+    // .story__item-video
+
+    &__item {
+        position: relative;
+        &.left__item { 
+            flex: 0 1 800px;
+            @media(max-width: $breakpoint1200){
+                flex: 0 1 60%;
+            }
+            @media(max-width: $breakpoint992){
+                flex: 0 1 100%;
+                padding-top: 35;
+            }
+            @media(max-width: $breakpoint992){
+                padding-top: 25;
+            }
+        }
+        &.right__item {
+            flex: 0 1 366px;
+            @media(max-width: $breakpoint1200){
+                flex: 0 1 40%;
+            }
+            @media(max-width: $breakpoint992){
+                flex: 0 1 100%;
+            }
+        }
+    }
+
+    // .story__video
+
+    &__item-video {
+        position: relative;
+        .video__trum {
+            @media(max-width: $breakpoint1200){
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .play__btn {
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    // .story__item
+
+    &__item {
+    }
+
+    // .story__item-title
+
+    &__item-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 110%;
+        letter-spacing: -0.03em;
+        color: #001731;
+        @media(max-width: $breakpoint1200){
+            padding-top: 70px;
+        }
+        @media(max-width: $breakpoint992){
+            padding-top: 0;
+        }
+    }
+}
+.stoty {
+
+    // .stoty__item-text
+
+    &__item-text {
+        padding-top: 18px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: #001731;
+        opacity: 0.75;
+        @media(max-width: $breakpoint992){
+            padding-top: 10;
+        }
+    }
+}
